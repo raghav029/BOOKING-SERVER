@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunConfigurationProducerService">
+    <option name="ignoredProducers">
+      <set>
+        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.API Gateway">
+    <configuration name="API Gateway" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>api-gateway/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8080 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Auth Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>auth-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8081 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="User Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>user-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8082 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Car Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>car-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8083 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Booking Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>booking-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8084 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Payment Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>payment-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8085 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Support Service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <item>-f</item>
+                <item>support-service/pom.xml</item>
+                <item>spring-boot:run</item>
+                <item>-DskipTests</item>
+                <item>-Dspring-boot.run.arguments=--server.port=8086 --spring.profiles.active=local</item>
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace">false</option>
+            <option name="work_dir" value="$PROJECT_DIR$" />
+            <option name="passParentEnv">true</option>
+            <option name="isShowConsoleOnStdErr">false</option>
+            <option name="isShowConsoleOnStdOut">false</option>
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.API Gateway" />
+      <item itemvalue="Maven.Auth Service" />
+      <item itemvalue="Maven.User Service" />
+      <item itemvalue="Maven.Car Service" />
+      <item itemvalue="Maven.Booking Service" />
+      <item itemvalue="Maven.Payment Service" />
+      <item itemvalue="Maven.Support Service" />
+    </list>
+  </component>
+</project>

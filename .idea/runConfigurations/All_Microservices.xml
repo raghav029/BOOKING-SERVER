@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager" selected="Compound.All Microservices">
+    <configuration name="All Microservices" type="CompoundRunConfigurationType">
+      <toRun name="API Gateway" type="MavenRunConfiguration" />
+      <toRun name="Auth Service" type="MavenRunConfiguration" />
+      <toRun name="User Service" type="MavenRunConfiguration" />
+      <toRun name="Car Service" type="MavenRunConfiguration" />
+      <toRun name="Booking Service" type="MavenRunConfiguration" />
+      <toRun name="Payment Service" type="MavenRunConfiguration" />
+      <toRun name="Support Service" type="MavenRunConfiguration" />
+      <method v="2" />
+    </configuration>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+com/rtt/luxurycar/user/repository/FavoriteCarRepository.class
+com/rtt/luxurycar/user/dto/UserProfileDto.class
+com/rtt/luxurycar/user/model/FavoriteCar.class
+com/rtt/luxurycar/user/UserApplication.class
+com/rtt/luxurycar/user/model/User.class
+com/rtt/luxurycar/user/repository/UserRepository.class
+com/rtt/luxurycar/user/service/UserService.class

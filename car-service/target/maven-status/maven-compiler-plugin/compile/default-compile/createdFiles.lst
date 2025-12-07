@@ -1,0 +1,5 @@
+com/rtt/luxurycar/car/repository/CarRepository.class
+com/rtt/luxurycar/car/CarApplication.class
+com/rtt/luxurycar/car/controller/CarController.class
+com/rtt/luxurycar/car/service/CarService.class
+com/rtt/luxurycar/car/model/Car.class

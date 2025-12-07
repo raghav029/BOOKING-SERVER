@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/luxury_car_db
+    username: raghavjha
+    password:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8081
+
+jwt:
+  secret: luxury-car-secret-key-change-in-production
+  expiration-seconds: 86400
+
+logging:
+  level:
+    root: INFO
+    com.rtt.luxurycar: DEBUG
