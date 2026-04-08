@@ -1,0 +1,302 @@
+{
+  "info": {
+    "name": "Luxury Car Booking APIs",
+    "_postman_id": "c3cfe3a1-0000-0000-0000-000000000000",
+    "description": "Auth, Cars, Drivers, Trips via API Gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth (auth-service:8081)",
+      "item": [
+        {
+          "name": "Signup",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "url": {
+              "raw": "http://localhost:8081/auth/signup",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8081",
+              "path": ["auth", "signup"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"password\": \"Password123\",\n  \"city\": \"Bangalore\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "url": {
+              "raw": "http://localhost:8081/auth/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8081",
+              "path": ["auth", "login"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"Password123\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cars (car-service:8083)",
+      "item": [
+        {
+          "name": "Search/List Cars",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8083/cars",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["cars"]
+            }
+          }
+        },
+        {
+          "name": "Get Car by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8083/cars/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["cars", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Car",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "url": {
+              "raw": "http://localhost:8083/cars",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["cars"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Toyota Camry\",\n  \"city\": \"Bangalore\",\n  \"type\": \"SEDAN\",\n  \"seats\": 4,\n  \"fuel\": \"PETROL\",\n  \"hourlyPrice\": 500.0,\n  \"dailyPrice\": 3000.0,\n  \"imageUrl\": \"https://example.com/camry.jpg\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Car",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "url": {
+              "raw": "http://localhost:8083/cars/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["cars", "1"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Car\",\n  \"city\": \"Bangalore\",\n  \"type\": \"SUV\",\n  \"seats\": 5,\n  \"fuel\": \"DIESEL\",\n  \"hourlyPrice\": 600.0,\n  \"dailyPrice\": 3500.0,\n  \"imageUrl\": \"https://example.com/updated.jpg\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Delete Car",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8083/cars/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["cars", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Booking via Gateway (api-gateway:8080)",
+      "description": "Driver and Trip APIs via gateway with JWT auth",
+      "item": [
+        {
+          "name": "Create Driver",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/drivers",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "drivers"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Ravi Kumar\",\n  \"phone\": \"9998887776\",\n  \"city\": \"Bangalore\"\n}"
+            }
+          }
+        },
+        {
+          "name": "List Drivers",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/drivers",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "drivers"]
+            }
+          }
+        },
+        {
+          "name": "Get Driver by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/drivers/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "drivers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Trip",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/trips",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "trips"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 1,\n  \"pickupTime\": \"2025-12-25T18:30:00\",\n  \"pickupLocation\": \"Indiranagar, Bangalore\",\n  \"dropLocation\": \"MG Road, Bangalore\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Get Trip by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/trips/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "trips", "1"]
+            }
+          }
+        },
+        {
+          "name": "List Trips by User",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/trips?userId=1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "trips"],
+              "query": [
+                { "key": "userId", "value": "1" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Assign Driver & Vehicle",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/trips/1/assign",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "trips", "1", "assign"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"driverId\": 1,\n  \"carId\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Trip Status",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}", "type": "text" }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/booking/trips/1/status",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["booking", "trips", "1", "status"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"ONGOING\"\n}"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}

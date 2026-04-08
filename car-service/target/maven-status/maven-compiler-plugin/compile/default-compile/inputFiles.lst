@@ -1,5 +1,5 @@
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/car-service/src/main/java/com/rtt/luxurycar/car/CarApplication.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/car-service/src/main/java/com/rtt/luxurycar/car/controller/CarController.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/car-service/src/main/java/com/rtt/luxurycar/car/model/Car.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/car-service/src/main/java/com/rtt/luxurycar/car/repository/CarRepository.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/car-service/src/main/java/com/rtt/luxurycar/car/service/CarService.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/car-service/src/main/java/com/rtt/luxurycar/car/CarApplication.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/car-service/src/main/java/com/rtt/luxurycar/car/controller/CarController.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/car-service/src/main/java/com/rtt/luxurycar/car/model/Car.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/car-service/src/main/java/com/rtt/luxurycar/car/repository/CarRepository.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/car-service/src/main/java/com/rtt/luxurycar/car/service/CarService.java

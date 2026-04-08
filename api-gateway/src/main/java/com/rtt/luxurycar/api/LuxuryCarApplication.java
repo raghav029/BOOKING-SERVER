@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = "com.rtt.luxurycar")
+@SpringBootApplication(scanBasePackages = "com.rtt.luxurycar.api")
 @EnableJpaRepositories(basePackages = "com.rtt.luxurycar")
 @EntityScan(basePackages = "com.rtt.luxurycar")
 public class LuxuryCarApplication {

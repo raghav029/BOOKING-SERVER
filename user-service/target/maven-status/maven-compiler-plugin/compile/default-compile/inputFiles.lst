@@ -1,7 +1,7 @@
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/UserApplication.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/dto/UserProfileDto.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/model/FavoriteCar.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/model/User.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/repository/FavoriteCarRepository.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/repository/UserRepository.java
-/Users/raghavjha/Desktop/PROJECT/car-booking-backend/user-service/src/main/java/com/rtt/luxurycar/user/service/UserService.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/UserApplication.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/dto/UserProfileDto.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/model/FavoriteCar.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/model/User.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/repository/FavoriteCarRepository.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/repository/UserRepository.java
+/Users/raghavjha/Desktop/PROJECT/CAR_BOOKING/server/user-service/src/main/java/com/rtt/luxurycar/user/service/UserService.java
